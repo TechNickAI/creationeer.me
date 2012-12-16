@@ -26,7 +26,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".sidebar">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -57,29 +57,32 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">About me</li>
-              <li class="active"><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
+        <div class="span3 sidebar">
+            <ul class="nav nav-list affix sidenav">
+                <li><a href="#about"><i class="icon-chevron-right">&nbsp;</i> About</a></li>
+                <li><a href="#pilotfish"><i class="icon-chevron-right">&nbsp;</i> Pilotfish</a></li>
+                <li><a href="#sunlight"><i class="icon-chevron-right">&nbsp;</i> Sunlight</a></li>
+                <li><a href="#repohealth"><i class="icon-chevron-right">&nbsp;</i> RepoHealth</a></li>
+                <li><a href="#node-geoip-server"><i class="icon-chevron-right">&nbsp;</i> Node Geoip Server</a></li>
+                <li><a href="#homedir"><i class="icon-chevron-right">&nbsp;</i> Homedir</a></li>
+                <li><a href="#miles"><i class="icon-chevron-right">&nbsp;</i> 106 Miles</a></li>
+                <li><a href="#sfjs"><i class="icon-chevron-right">&nbsp;</i> SFJS</a></li>
+                <li><a href="#krux"><i class="icon-chevron-right">&nbsp;</i> Krux</a></li>
+                <li><a href="#goko"><i class="icon-chevron-right">&nbsp;</i> Goko</a></li>
+                <li><a href="#aboinga"><i class="icon-chevron-right">&nbsp;</i> Aboinga</a></li>
+                <li><a href="#liftium"><i class="icon-chevron-right">&nbsp;</i> Liftium</a></li>
+                <li><a href="#wikia"><i class="icon-chevron-right">&nbsp;</i> Wikia</a></li>
+                <li><a href="#wikinvest"><i class="icon-chevron-right">&nbsp;</i> Wikinvest</a></li>
+                <li><a href="#yahoo"><i class="icon-chevron-right">&nbsp;</i> Yahoo!</a></li>
+                <li><a href="#adicio"><i class="icon-chevron-right">&nbsp;</i> Adicio</a></li>
+                <li><a href="#westech"><i class="icon-chevron-right">&nbsp;</i> Westech</a></li>
+                <li><a href="#kids"><i class="icon-chevron-right">&nbsp;</i> Kids</a></li>
+                <li><a href="#zipline"><i class="icon-chevron-right">&nbsp;</i> Zipline</a></li>
+            </ul><!-- .sidenav -->
+        </div><!-- .sidebar-->
+
         <div class="span9">
+          <section id="about">
           <div class="hero-unit">
             <h1>Nick Sullivan, Creationeer</h1>
             <p>As a computer programmer, I build software and develop technology that simplifies peoples' lives. Over the years, I’ve focused on Web-based product development, spanning the full range of initiatives from concept creation to large-scale rollout. I’ve lead development, user interface and systems administration teams, and founded my own companies.
@@ -115,19 +118,200 @@
               <p>I aim to live my life simply, and that guides my work as well</p>
             </div><!--/span-->
           </div><!--/row-->
-        </div><!--/span-->
+          </section><!-- #about -->
+
+          <hr>
+          <section id="pilotfish">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Pilotfish</h2>
+              <a class="btn btn-large" href="http://pilotfish.io">Visit Pilotfish.io</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="sunlight">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Sunlight</h2>
+              <a class="btn btn-large" href="https://github.com/gorillamania/sunlight">Sunlight on github</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="repohealth">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Repohealth</h2>
+              <a class="btn btn-large" href="http://repohealth.com">Visit Repohealth.com</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="node-geoip-server">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Node Geoip Server</h2>
+              <a class="btn btn-large" href="https://github.com/gorillamania/node_geoip_server">Node Geoip Server on github</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="homedir">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Homedir</h2>
+              <a class="btn btn-large" href="https://github.com/gorillamania/homedir">Homedir on github</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="miles">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>106 Miles</h2>
+              <a class="btn btn-large" href="http://www.meetup.com/106miles/">Visit the 106 miles meetup</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="sfjs">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>SFJS</h2>
+              <a class="btn btn-large" href="http://www.meetup.com/jsmeetup/">Visit the SFJS meetup</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="krux">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Krux</h2>
+              <a class="btn btn-large" href="http://krux.com">Visit Krux.com</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="goko">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Goko</h2>
+              <a class="btn btn-large" href="http://goko.com">Visit Goko.com</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="aboinga">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Aboinga</h2>
+              <a class="btn btn-large" href="http://aboinga.com">Visit Aboinga.com</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="liftium">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Liftium</h2>
+              <a class="btn btn-large" href="https://github.com/liftiuminc">Liftium on github</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="wikia">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Wikia</h2>
+              <a class="btn btn-large" href="http://wikia.com">Visit wikia.com</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="wikinvest">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Wikinvest</h2>
+              <a class="btn btn-large" href="http://wikinvest.com">Visit wikinvest.com</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="yahoo">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Yahoo!</h2>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="adicio">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Adicio</h2>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="westech">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Westech</h2>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="kids">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>4 beautiful children</h2>
+              I've been lucky enoug
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+          <hr>
+          <section id="zipline">
+          <div class="row-fluid">
+            <div class="span9">
+              <h2>Zipline, in my backyard</h2>
+              <p>
+              Last, but certainly not least, I have built a zipline in my backyard. Why? Because it's cooler than having a T-Rex.
+              <iframe src="https://docs.google.com/presentation/embed?id=1oHrakoAsQWUP-ZR64HQmsu86iE0EjK3z4BXUuQGBPBU&amp;start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="811" height="633"></iframe>
+              </p>
+              <a class="btn btn-large" href="http://repohealth.com">View presentation on how to build a zipline in your backyard</a>
+            </div>
+          </div><!-- .row-fluid -->
+          </section>
+
+
+        </div><!--/span9-->
       </div><!--/row-->
 
       <hr>
-
-      <footer>
-      <p>(ɔ) <a href="http://en.wikipedia.org/wiki/Copyleft">Copy Left</a></p>
-      </footer>
 
     </div><!--/.fluid-container-->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="js/bootstrap-2.2.2.min.js"></script>
+    <script>$(".sidenav").affix();</script>
 
   </body>
 </html>
