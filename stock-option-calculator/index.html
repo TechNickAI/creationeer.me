@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html>
-    <head><title>Stock option calculator</title></head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <head>
+        <title>Stock option calculator</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    </head>
     <body>
-        <form> 
+        <form action=""> 
         <input type="number" id="valuation" value="20000000"/> Valuation of the company<br />
         <input type="number" id="yourshares" value="10000"/> Number of shares you were given<br />
         <input type="number" id="outshares" value="1000000"/> Number of outstanding shares<br />
@@ -15,17 +16,16 @@
         </form>
 
         <div id="results">
-            In this scenario, you own <span id="ownership"></span>% of the company, which is worth $<span style="font-weight: bold" class="gross"></span>, or about $<span id="aftertaxes"></span> after taxes.
+            In this scenario, you own <span id="ownership">&nbsp;</span>% of the company, which is worth $<span style="font-weight: bold" class="gross">&nbsp;</span>, or about $<span id="aftertaxes">&nbsp;</span> after taxes.
             <br />
             <br />
             Here's the math (mouse over for explanations):<br />
-            gross = [ ( <span title="How many months you've vested" class="vestedmonths"></span> /
-            <span title="out of your total months for vesting" class="months"></span> ) * ( <span
-                title="Your number of shares" class="yourshares"></span> / <span title="How many
-                outstanding shares" class="outshares"></span> ) ] * $<span title="Valuation of the company" class="valuation"></span><br />
-            after taxes = $<span class="gross" title="Gross"></span> - <span class="taxrate"></span>%
+            gross = [ ( <span title="How many months you've vested" class="vestedmonths">&nbsp;</span> /
+            <span title="out of your total months for vesting" class="months">&nbsp;</span> ) * ( <span
+                title="Your number of shares" class="yourshares">&nbsp;</span> / <span title="How many
+                outstanding shares" class="outshares">&nbsp;</span> ) ] * $<span title="Valuation of the company" class="valuation">&nbsp;</span><br />
+            after taxes = $<span class="gross" title="Gross">&nbsp;</span> - <span class="taxrate">&nbsp;</span>%
         </div>
-    </body>
     <script>
         function addCommas(nStr) {
             nStr += '';
@@ -87,4 +87,7 @@
     <p>
     Like this? Think it could be better? Fork the <a href="https://gist.github.com/3965950">gist</a>
     </p>
+
+    <footer>This tool created to make your life easier by <a href="http://creationeer.me/">Nick Sullivan, Creationeer</a></footer>
+    </body>
 </html>
