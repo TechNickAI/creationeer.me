@@ -2,16 +2,19 @@
 <html>
     <head>
         <title>Stock option calculator</title>
+         <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     </head>
     <body>
+        <h2>Stock Option Calculator</h2>
+        <div class="container">
         <form action=""> 
         <input type="number" id="valuation" value="20000000"/> Valuation of the company<br />
         <input type="number" id="yourshares" value="10000"/> Number of shares you were given<br />
         <input type="number" id="outshares" value="1000000"/> Number of outstanding shares<br />
         <input type="number" id="vestedmonths" value="12"/> How many months you've vested<br />
         <input type="number" id="months" value="48"/> How many months your vesting schedule is<br />
-        <input type="number" id="taxrate" value="35"/> Tax rate (change to 15% if you early-exercised more than a year ago). Change it to 20% after 2012 unless the fiscal cliff changes.<br />
+        <input type="number" id="taxrate" value="35"/> Tax rate (change to 15% if you early-exercised more than a year ago)<br />
         <input type="submit" value="calculate">
         </form>
 
@@ -89,5 +92,6 @@
     </p>
 
     <footer><small>This tool created to make your life easier by <a href="http://creationeer.me/">Nick Sullivan, Creationeer</a></small></footer>
+    </div><!-- .container -->
     </body>
 </html>
